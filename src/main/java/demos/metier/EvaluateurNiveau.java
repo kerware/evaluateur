@@ -61,11 +61,11 @@ public class EvaluateurNiveau {
 		
 		int somme = iCours + iExamen;
 		 
-		if ( somme <= LIMITE_DC ) {
+		if ( somme < LIMITE_DC ) {
 			return NIVEAU_D;
-		} else if ( somme <= LIMITE_CB ) {
+		} else if ( somme < LIMITE_CB ) {
 			return NIVEAU_C;
-		} else if ( somme <= LIMITE_BA ) {
+		} else if ( somme < LIMITE_BA ) {
 			return NIVEAU_B;
 		}
 		else return NIVEAU_A;
